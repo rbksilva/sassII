@@ -1,0 +1,29 @@
+/*estilos pestaña*/
+@mixin titulo{
+    color: #A52206;
+    font-size: 70px;
+    font-family: 'Aguafina Script', cursive;
+    font-family: 'Moon Dance', cursive;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    text-align: center;
+}
+body{
+    div{
+       header{
+            h1{
+                @include titulo;
+            } 
+        } 
+        .mainPestana{
+            text-align: center;
+            font-family: 'Amatic SC', cursive;
+            font-family: 'Moon Dance', cursive;
+            font-family: 'Playfair Display', serif;
+            font-family: 'Roboto', sans-serif;
+            font-size: 30px;
+        }
+    }
+    
+}

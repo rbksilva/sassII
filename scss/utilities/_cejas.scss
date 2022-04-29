@@ -1,0 +1,20 @@
+/*estilos del html Cejas*/
+.cejasPrincipal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 15px;
+    font-size: 35px;
+    .lista{
+        text-decoration: none;
+        list-style: none;
+        font-family: 'Amatic SC', cursive;
+        font-family: 'Moon Dance', cursive;
+        font-family: 'Playfair Display', serif;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        color: #A52206;
+    }
+
+}

@@ -1,0 +1,88 @@
+@charset "UTF-8";
+/*estilos del html Cejas*/
+.cejasPrincipal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 15px;
+  font-size: 35px; }
+  .cejasPrincipal .lista {
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Moon Dance', cursive;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #A52206; }
+
+/*estilos pestaña*/
+body div header h1 {
+  color: #A52206;
+  font-size: 70px;
+  font-family: 'Aguafina Script', cursive;
+  font-family: 'Moon Dance', cursive;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  text-align: center; }
+
+body div .mainPestana {
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+  font-family: 'Moon Dance', cursive;
+  font-family: 'Playfair Display', serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px; }
+
+/*estilos de epilacion*/
+body div form {
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 15px; }
+
+/*estilos del index*/
+body {
+  background-image: linear-gradient(to left, #F5B7B1, #FAE5D3); }
+  body div header nav div ul li {
+    margin: 35px;
+    text-transform: uppercase; }
+    body div header nav div ul li:hover {
+      background-color: #fa8072;
+      transform: scale(1.1); }
+  body div header h1 {
+    color: #A52206;
+    font-size: 70px;
+    font-family: 'Aguafina Script', cursive;
+    font-family: 'Moon Dance', cursive;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    text-align: center; }
+  body div .principal {
+    height: 600px;
+    align-items: center;
+    text-align: center;
+    background-image: url("../img/material-cosmiatria.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px; }
+    body div .principal h2 {
+      font-family: 'Amatic SC', cursive;
+      font-family: 'Moon Dance', cursive;
+      font-family: 'Playfair Display', serif;
+      font-family: 'Roboto', sans-serif;
+      font-size: 35px;
+      font-weight: bold; }
+  body div footer {
+    text-align: center; }
+    body div footer div h3 {
+      display: inline-block;
+      padding: 10px; }
+    body div footer h3 {
+      font-family: 'Aguafina Script', cursive;
+      font-family: 'Amatic SC', cursive;
+      font-family: 'Moon Dance', cursive;
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px; }
