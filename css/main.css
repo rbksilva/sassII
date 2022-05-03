@@ -6,7 +6,7 @@
   align-items: center;
   padding: 10px;
   margin: 15px;
-  font-size: 35px; }
+  font-size: 20px; }
   .cejasPrincipal .lista {
     text-decoration: none;
     list-style: none;
@@ -37,10 +37,113 @@ body div .mainPestana {
   font-size: 30px; }
 
 /*estilos de epilacion*/
+body div main {
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+  font-family: 'Moon Dance', cursive;
+  font-family: 'Playfair Display', serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  margin: 15px; }
+
+body div ol {
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Amatic SC', cursive;
+  font-family: 'Moon Dance', cursive;
+  font-family: 'Playfair Display', serif;
+  font-family: 'Roboto', sans-serif;
+  text-align: center; }
+
 body div form {
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 30px;
-  padding: 15px; }
+  padding: 15px;
+  width: 400px; }
+
+@media screen and (max-width: 480px) {
+  /*INDEX*/
+  .contenedor {
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "encabezado" "titulo" "principal1" "footer";
+    justify-content: center; }
+  .navbar {
+    grid-area: encabecado; }
+  h1 {
+    display: none; }
+  .texto {
+    display: none; }
+  .principar1 {
+    font-size: 30px;
+    padding: 50px;
+    text-align: center;
+    background-image: url("../img/material-cosmiatria.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    font-family: 'Aguafina Script', cursive;
+    font-family: 'Moon Dance', cursive;
+    grid-area: principal1;
+    width: auto;
+    justify-content: center;
+    align-items: center; }
+  footer {
+    grid-area: footer; }
+  /*CEJAS*/
+  .video {
+    display: none; }
+  .cosme {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .menu {
+    background-color: #f5ac85;
+    top: 0;
+    text-align: center;
+    grid-area: menu; }
+  .menu li {
+    background-color: #cc162e;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 30px; }
+  header nav ul li a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    margin: 35px;
+    text-transform: uppercase; }
+  footer {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 80px;
+    grid-area: footer; }
+  .redes {
+    display: inline-block;
+    padding: 10px; } }
+
+@media screen and (max-width: 900px) {
+  .encabezado {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 80px;
+    padding: 30px;
+    grid-area: encabezado;
+    font-size: 20px; }
+  h1 {
+    font-size: 35px; }
+  .texto {
+    display: none; }
+  .img {
+    height: 300px; }
+  .cosme {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
 
 /*estilos del index*/
 body {
