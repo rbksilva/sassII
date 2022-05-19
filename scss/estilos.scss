@@ -21,14 +21,16 @@ body{
     div{
         header{
             nav{
+
                 div{
                     ul{
                         li{
-                            margin: 35px;
+                            margin: 15px;                
                             text-transform: uppercase;
+                            font-size: 20px;
                             &:hover{
                                 background-color: #fa8072;
-                                transform: scale(1.1);
+                                transform: scale(1.02);
                             }
                         }
                     }
@@ -54,7 +56,7 @@ body{
             background-image: url('../img/material-cosmiatria.jpg');
             background-repeat: no-repeat;
             background-size: cover;
-            padding: 120px;
+            padding:50px;
             h2{
                 font-family: 'Amatic SC', cursive;
                 font-family: 'Moon Dance', cursive;
@@ -79,8 +81,53 @@ body{
                 font-family: 'Amatic SC', cursive;
                 font-family: 'Moon Dance', cursive;
                 font-family: 'Roboto', sans-serif;
-                font-size: 20px;
+                font-size: 15px;
             }
         }
+    }
+}
+
+@media screen and (max-width:500px) {
+   
+    /*INDEX*/
+    .contenedor{
+        height: 80vh;
+        display: grid;
+        grid-template-areas: "encabezado"
+                              "titulo"
+                              "principal1"
+                              "footer";
+        justify-content: center;
+    }   
+
+    .navbar{
+        grid-area: encabecado;
+    }
+
+    h1{
+        grid-area: titulo;
+        display: none;
+    }
+
+    .texto{
+        display: none;
+    }
+    .principal{
+        padding: 1px;
+        text-align: center;
+        background-image: url('../img/material-cosmiatria.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 80vh;
+        font-family: 'Aguafina Script', cursive;
+        font-family: 'Moon Dance', cursive;
+        grid-area: principal1;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer{
+        grid-area: footer;
     }
 }

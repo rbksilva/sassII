@@ -14,8 +14,71 @@
     font-family: 'Moon Dance', cursive;
     font-family: 'Playfair Display', serif;
     font-family: 'Roboto', sans-serif;
+    text-align: center; }
+
+@media screen and (max-width: 500px) {
+  .contenedor {
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "encabezado" "titulo" "principal1" "footer";
+    justify-content: center; }
+  .navbar {
+    grid-area: encabecado; }
+  h1 {
+    grid-area: titulo; }
+  .cejasPrincipal {
+    grid-area: principal1; }
+  .video {
+    display: none; }
+  footer {
     text-align: center;
-    color: #A52206; }
+    font-size: 15px;
+    margin-top: 80px;
+    grid-area: footer; }
+  .redes {
+    display: inline-block;
+    padding: 10px; } }
+
+@media screen and (max-width: 900px) {
+  h1 {
+    font-size: 15px; } }
+
+body div main .imgCosme {
+  justify-content: center;
+  margin: 20px;
+  align-items: center;
+  border: 2px solid  #A52206;
+  border-radius: 20px;
+  width: 450px;
+  height: 350px;
+  padding: 15px; }
+  body div main .imgCosme p {
+    padding: 10px; }
+    body div main .imgCosme p span {
+      display: block; }
+
+@media screen and (max-width: 500px) {
+  body .contenedor {
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "encabezado" "titulo" "principal1" "footer";
+    justify-content: center; }
+    body .contenedor .navbar {
+      grid-area: encabecado; }
+      body .contenedor .navbar h1 {
+        grid-area: titulo; }
+  body .cosme {
+    grid-area: principal1; }
+  body .imgCosme {
+    display: block;
+    justify-content: center;
+    margin: 20px;
+    align-items: center;
+    border: 2px solid  #A52206;
+    border-radius: 20px;
+    width: 350px;
+    height: 250px;
+    padding: 15px; } }
 
 /*estilos pestaña*/
 body div header h1 {
@@ -34,7 +97,13 @@ body div .mainPestana {
   font-family: 'Moon Dance', cursive;
   font-family: 'Playfair Display', serif;
   font-family: 'Roboto', sans-serif;
-  font-size: 30px; }
+  font-size: 20px; }
+  body div .mainPestana .pestana {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; }
 
 /*estilos de epilacion*/
 body div main {
@@ -55,13 +124,20 @@ body div ol {
   font-family: 'Roboto', sans-serif;
   text-align: center; }
 
-body div form {
+body .contacto form {
   border: 2px solid black;
   border-radius: 30px;
   padding: 15px;
-  width: 400px; }
+  width: 300px; }
 
-@media screen and (max-width: 480px) {
+body .contacto {
+  justify-content: center; }
+
+body .mapa {
+  width: 150px;
+  height: 150px; }
+
+@media screen and (max-width: 500px) {
   /*INDEX*/
   .contenedor {
     height: 80vh;
@@ -71,12 +147,12 @@ body div form {
   .navbar {
     grid-area: encabecado; }
   h1 {
+    grid-area: titulo;
     display: none; }
   .texto {
     display: none; }
-  .principar1 {
-    font-size: 30px;
-    padding: 50px;
+  .principal {
+    padding: 1px;
     text-align: center;
     background-image: url("../img/material-cosmiatria.jpg");
     background-repeat: no-repeat;
@@ -97,23 +173,6 @@ body div form {
     display: flex;
     flex-direction: column;
     align-items: center; }
-  .menu {
-    background-color: #f5ac85;
-    top: 0;
-    text-align: center;
-    grid-area: menu; }
-  .menu li {
-    background-color: #cc162e;
-    display: inline-block;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 30px; }
-  header nav ul li a {
-    list-style: none;
-    text-decoration: none;
-    color: white;
-    margin: 35px;
-    text-transform: uppercase; }
   footer {
     text-align: center;
     font-size: 15px;
@@ -123,17 +182,13 @@ body div form {
     display: inline-block;
     padding: 10px; } }
 
+/*Contacto*/
+.contacto {
+  margin: 50px; }
+  .contacto form fieldset legend {
+    text-align: center; }
+
 @media screen and (max-width: 900px) {
-  .encabezado {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    margin: 80px;
-    padding: 30px;
-    grid-area: encabezado;
-    font-size: 20px; }
   h1 {
     font-size: 35px; }
   .texto {
@@ -149,11 +204,12 @@ body div form {
 body {
   background-image: linear-gradient(to left, #F5B7B1, #FAE5D3); }
   body div header nav div ul li {
-    margin: 35px;
-    text-transform: uppercase; }
+    margin: 15px;
+    text-transform: uppercase;
+    font-size: 20px; }
     body div header nav div ul li:hover {
       background-color: #fa8072;
-      transform: scale(1.1); }
+      transform: scale(1.02); }
   body div header h1 {
     color: #A52206;
     font-size: 70px;
@@ -170,7 +226,7 @@ body {
     background-image: url("../img/material-cosmiatria.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 120px; }
+    padding: 50px; }
     body div .principal h2 {
       font-family: 'Amatic SC', cursive;
       font-family: 'Moon Dance', cursive;
@@ -188,4 +244,34 @@ body {
       font-family: 'Amatic SC', cursive;
       font-family: 'Moon Dance', cursive;
       font-family: 'Roboto', sans-serif;
-      font-size: 20px; }
+      font-size: 15px; }
+
+@media screen and (max-width: 500px) {
+  /*INDEX*/
+  .contenedor {
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "encabezado" "titulo" "principal1" "footer";
+    justify-content: center; }
+  .navbar {
+    grid-area: encabecado; }
+  h1 {
+    grid-area: titulo;
+    display: none; }
+  .texto {
+    display: none; }
+  .principal {
+    padding: 1px;
+    text-align: center;
+    background-image: url("../img/material-cosmiatria.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    font-family: 'Aguafina Script', cursive;
+    font-family: 'Moon Dance', cursive;
+    grid-area: principal1;
+    width: auto;
+    justify-content: center;
+    align-items: center; }
+  footer {
+    grid-area: footer; } }

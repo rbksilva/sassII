@@ -14,7 +14,55 @@
         font-family: 'Playfair Display', serif;
         font-family: 'Roboto', sans-serif;
         text-align: center;
-        color: #A52206;
     }
 
 }
+
+@media screen and (max-width:500px){
+    .contenedor{
+        height: 80vh;
+        display: grid;
+        grid-template-areas: "encabezado"
+                              "titulo"
+                              "principal1"
+                              "footer";
+        justify-content: center;
+    }  
+    .navbar{
+        grid-area: encabecado;
+    }
+
+    h1{
+        grid-area: titulo;
+    }
+    .cejasPrincipal{
+        grid-area: principal1;
+    }
+   
+    .video{
+        display: none;
+    }
+    
+     
+    footer{
+        text-align: center;
+        font-size: 15px;
+        margin-top: 80px;
+        grid-area: footer;
+    }
+    
+    .redes{
+        display: inline-block;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:900px){
+    h1{
+        font-size: 15px;
+    }
+    .cejasPrincipal{
+        
+    }
+}
+

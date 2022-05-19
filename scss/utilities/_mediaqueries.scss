@@ -1,4 +1,4 @@
-@media screen and (max-width:480px) {
+@media screen and (max-width:500px) {
    
     /*INDEX*/
     .contenedor{
@@ -9,22 +9,22 @@
                               "principal1"
                               "footer";
         justify-content: center;
-    }
+    }   
 
     .navbar{
         grid-area: encabecado;
     }
 
     h1{
-        display: none;   
+        grid-area: titulo;
+        display: none;
     }
 
     .texto{
         display: none;
     }
-    .principar1{
-        font-size: 30px;
-        padding: 50px;
+    .principal{
+        padding: 1px;
         text-align: center;
         background-image: url('../img/material-cosmiatria.jpg');
         background-repeat: no-repeat;
@@ -48,36 +48,12 @@
         display: none;
     }
     
-
     .cosme{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
-    .menu{
-        background-color: #f5ac85;
-        top: 0;
-        text-align: center;
-        grid-area: menu;      
-    }
-    
-    .menu li {
-        background-color: #cc162e;
-        display: inline-block;
-        padding: 10px;
-        margin: 10px;
-        border-radius: 30px;
-    }
-    
-    header nav ul li a{
-        list-style: none;
-        text-decoration: none;
-        color: white;
-        margin: 35px;
-        text-transform: uppercase;
-    }
-    
+   
     footer{
         text-align: center;
         font-size: 15px;
@@ -91,19 +67,24 @@
     }
 }
 
+/*Contacto*/
+
+.contacto{
+  margin: 50px;
+  form{
+    fieldset{
+          legend{
+              text-align: center; 
+          }
+         
+
+      }
+  }
+}
+
 @media screen and (max-width:900px) {
    
-    .encabezado{
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        height: auto;
-        margin: 80px;
-        padding: 30px;
-        grid-area: encabezado;
-        font-size: 20px;
-    }
+   
     h1{
         font-size: 35px;
     }

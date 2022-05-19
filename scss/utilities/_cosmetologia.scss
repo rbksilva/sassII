@@ -1,0 +1,64 @@
+body{
+    div{
+        main{       
+            .imgCosme{
+                
+                justify-content: center;
+                margin: 20px;
+                align-items: center;
+                border: 2px solid  #A52206;
+                border-radius:20px;
+                width: 450px;
+                height: 350px;
+                padding: 15px;
+                
+                p{
+                    padding: 10px;
+                    
+                   span{
+                    display: block;
+                } 
+                }
+                
+             
+            }
+
+        }
+    }
+}
+@media screen and (max-width:500px){
+    body{
+        .contenedor{
+            height: 80vh;
+            display: grid;
+            grid-template-areas: "encabezado"
+                              "titulo"
+                              "principal1"
+                              "footer";
+            justify-content: center;
+             .navbar{
+                grid-area: encabecado;
+                h1{
+                    grid-area: titulo;
+                 }
+             }  
+       
+        }
+
+         
+        .cosme{
+            grid-area: principal1;
+        }
+        .imgCosme{
+            display: block;
+            justify-content: center;
+            margin: 20px;
+            align-items: center;
+            border: 2px solid  #A52206;
+            border-radius:20px;
+            width: 350px;
+            height: 250px;
+            padding: 15px;
+        }
+    }
+}
