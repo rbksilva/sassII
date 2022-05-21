@@ -22,15 +22,101 @@ body{
             font-family: 'Moon Dance', cursive;
             font-family: 'Playfair Display', serif;
             font-family: 'Roboto', sans-serif;
-            font-size: 20px;
+            font-size: 25px;
+            h2{
+                font-size: 1em;
+            }
             .pestana{
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
-                padding: 20px;
+                padding: 50px;
+                gap: 50px;
             }
         }
     }
-    
 }
+
+@media screen and (max-width:700px){
+    .contenedor{
+        height: 80vh;
+        display: grid;
+        grid-template-areas: "encabezado"
+                              "titulo"
+                              "principal1"
+                              "footer";
+        justify-content: center;
+        align-items: center;
+    } 
+
+    .navbar{
+        grid-area: encabezado;
+    }
+
+    body div header h1{
+        grid-area: titulo;
+        font-size: 55px;
+    }
+    .mainPestana{
+        grid-area: principal1;
+    }
+
+    body div .mainPestana .pestana{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+       
+    footer{
+        text-align: center;
+        font-size: 10px;
+        margin-top: 80px;
+        grid-area: footer;
+    }
+    
+    .redes{
+        display: inline-block;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:480px){
+   
+    /*INDEX*/
+    .contenedor{
+        height: 80vh;
+        display: grid;
+        grid-template-areas: "encabezado"
+                              "titulo"
+                              "principal1"
+                              "footer";
+        justify-content: center;
+        align-items: center;
+    }   
+
+    .navbar{
+        grid-area: encabezado;
+    }
+
+    h1{
+        grid-area: titulo;
+        display: none;
+    }
+      
+    body div .mainPestana{
+        grid-area: principal1;
+    }
+    body div .mainPestana .pestana{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    footer{
+        text-align: center;
+        font-size: 15px;
+        margin-top: 80px;
+        grid-area: footer;
+    }
+}
+    

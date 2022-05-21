@@ -21,3 +21,73 @@ body{
         }
     }
 }
+
+@media screen and (max-width:700px){
+    .contenedor{
+        height: 80vh;
+        display: grid;
+        grid-template-areas: "encabezado"
+                              "titulo"
+                              "principal1"
+                              "footer";
+        justify-content: center;
+        align-items: center;
+    } 
+
+    .navbar{
+        grid-area: encabezado;
+    }
+
+    body div header h1{
+        grid-area: titulo;
+        font-size: 55px;
+    }
+    .mainEpilacion{
+        grid-area: principal1;
+    }
+       
+    footer{
+        text-align: center;
+        font-size: 10px;
+        margin-top: 80px;
+        grid-area: footer;
+    }
+    
+    .redes{
+        display: inline-block;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:480px){
+    .contenedor{
+        height: 80vh;
+        display: grid;
+        grid-template-areas: "encabezado"
+                              "titulo"
+                              "principal1"
+                              "footer";
+        justify-content: center;
+        align-items: center;
+    }   
+
+    .navbar{
+        grid-area: encabezado;
+    }
+
+    h1{
+        grid-area: titulo;
+        display: none;
+    }
+    .mainEpilacion{
+        grid-area: principal1;
+    }
+  
+    footer{
+        text-align: center;
+        font-size: 15px;
+        margin-top: 80px;
+        grid-area: footer;
+    }
+}
+    

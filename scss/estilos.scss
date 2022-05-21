@@ -3,7 +3,8 @@
 @import "utilities/pestanas";
 @import "utilities/epilacion";
 @import "utilities/contacto";
-@import "utilities/mediaqueries";
+
+/*estilos para el Titulo de cada pagina*/
 
 @mixin titulo{
     color: #A52206;
@@ -21,11 +22,10 @@ body{
     div{
         header{
             nav{
-
                 div{
                     ul{
                         li{
-                            margin: 15px;                
+                            margin: 0.5rem;                
                             text-transform: uppercase;
                             font-size: 20px;
                             &:hover{
@@ -37,32 +37,39 @@ body{
                 }
             }
             h1{
-                color: #A52206;
-                font-size: 70px;
-                font-family: 'Aguafina Script', cursive;
-                font-family: 'Moon Dance', cursive;
-                font-weight: bold;
-                text-align: center;
-                padding: 10px;
-                text-align: center;
+                @include titulo
+             
             }
         }
     
 
         .principal{
             height: 600px;
+            display: flex;
+            flex-direction: column;
             align-items: center;
+            justify-content: center;
             text-align: center;
             background-image: url('../img/material-cosmiatria.jpg');
             background-repeat: no-repeat;
             background-size: cover;
-            padding:50px;
+            font-size: 35px;
+            gap: 30px;
+                        
             h2{
                 font-family: 'Amatic SC', cursive;
                 font-family: 'Moon Dance', cursive;
                 font-family: 'Playfair Display', serif;
                 font-family: 'Roboto', sans-serif;
-                font-size: 35px;
+                font-size: 1em;
+                font-weight: bold;
+            }
+            p{
+                font-family: 'Amatic SC', cursive;
+                font-family: 'Moon Dance', cursive;
+                font-family: 'Playfair Display', serif;
+                font-family: 'Roboto', sans-serif;
+                font-size: 1em;
                 font-weight: bold;
             }
         }
@@ -73,8 +80,8 @@ body{
                 h3{
                     display: inline-block;
                     padding: 10px;
-                }
-                
+                    
+                } 
             }
             h3{
                 font-family: 'Aguafina Script', cursive;
@@ -87,7 +94,54 @@ body{
     }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:700px){
+    .contenedor{
+        height: 80vh;
+        display: grid;
+        grid-template-areas: "encabezado"
+                              "titulo"
+                              "principal1"
+                              "footer";
+        justify-content: center;
+        align-items: center;
+    } 
+
+    .navbar{
+        grid-area: encabezado;
+    }
+
+    body div header h1{
+        grid-area: titulo;
+        font-size: 55px;
+    }
+    
+    .texto{
+        display: none;
+    }
+    
+
+    .principal{
+        text-align: center;
+        background-image: url('../img/material-cosmiatria.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 80vh;
+        font-family: 'Aguafina Script', cursive;
+        font-family: 'Moon Dance', cursive;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+        grid-area: principal1;
+       align-items: center;
+    }
+
+    
+    footer{
+        grid-area: footer;
+    }
+}
+
+@media screen and (max-width:480px) {
    
     /*INDEX*/
     .contenedor{
@@ -98,10 +152,11 @@ body{
                               "principal1"
                               "footer";
         justify-content: center;
+        align-items: center;
     }   
 
     .navbar{
-        grid-area: encabecado;
+        grid-area: encabezado;
     }
 
     h1{
@@ -112,6 +167,10 @@ body{
     .texto{
         display: none;
     }
+    .textoIndex{
+        display: none;
+    }
+   
     .principal{
         padding: 1px;
         text-align: center;
@@ -126,7 +185,7 @@ body{
         justify-content: center;
         align-items: center;
     }
-
+    
     footer{
         grid-area: footer;
     }

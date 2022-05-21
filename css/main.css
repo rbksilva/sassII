@@ -15,17 +15,47 @@
     font-family: 'Playfair Display', serif;
     font-family: 'Roboto', sans-serif;
     text-align: center; }
+    .cejasPrincipal .lista li {
+      padding: 15px; }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
   .contenedor {
     height: 80vh;
     display: grid;
     grid-template-areas: "encabezado" "titulo" "principal1" "footer";
-    justify-content: center; }
+    justify-content: center;
+    align-items: center; }
   .navbar {
-    grid-area: encabecado; }
+    grid-area: encabezado; }
+  body div header h1 {
+    grid-area: titulo;
+    font-size: 55px; }
+  .cejasPrincipal {
+    grid-area: principal1;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 40px; }
+  footer {
+    text-align: center;
+    font-size: 10px;
+    margin-top: 80px;
+    grid-area: footer; }
+  .redes {
+    display: inline-block;
+    padding: 10px; } }
+
+@media screen and (max-width: 480px) {
+  .contenedor {
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "encabezado" "titulo" "principal1" "footer";
+    justify-content: center;
+    align-items: center; }
+  .navbar {
+    grid-area: encabezado; }
   h1 {
-    grid-area: titulo; }
+    grid-area: titulo;
+    display: none; }
   .cejasPrincipal {
     grid-area: principal1; }
   .video {
@@ -34,43 +64,36 @@
     text-align: center;
     font-size: 15px;
     margin-top: 80px;
-    grid-area: footer; }
-  .redes {
-    display: inline-block;
-    padding: 10px; } }
-
-@media screen and (max-width: 900px) {
-  h1 {
-    font-size: 15px; } }
+    grid-area: footer; } }
 
 body div main .imgCosme {
+  display: inline-flex;
   justify-content: center;
   margin: 20px;
   align-items: center;
   border: 2px solid  #A52206;
   border-radius: 20px;
-  width: 450px;
+  width: 550px;
   height: 350px;
   padding: 15px; }
-  body div main .imgCosme p {
-    padding: 10px; }
-    body div main .imgCosme p span {
-      display: block; }
+  body div main .imgCosme p span {
+    display: block; }
 
-@media screen and (max-width: 500px) {
-  body .contenedor {
+@media screen and (max-width: 700px) {
+  .contenedor {
     height: 80vh;
     display: grid;
     grid-template-areas: "encabezado" "titulo" "principal1" "footer";
     justify-content: center; }
-    body .contenedor .navbar {
-      grid-area: encabecado; }
-      body .contenedor .navbar h1 {
-        grid-area: titulo; }
-  body .cosme {
+  .navbar {
+    grid-area: encabecado; }
+  body div header h1 {
+    grid-area: titulo;
+    font-size: 55px; }
+  .cosme {
     grid-area: principal1; }
-  body .imgCosme {
-    display: block;
+  body div .cosme .imgCosme {
+    display: inline-flex;
     justify-content: center;
     margin: 20px;
     align-items: center;
@@ -78,7 +101,59 @@ body div main .imgCosme {
     border-radius: 20px;
     width: 350px;
     height: 250px;
-    padding: 15px; } }
+    padding: 15px; }
+  body div .cosme .imgCosme img {
+    width: 150px;
+    height: 200px; }
+  body div .cosme .imgCosme p span {
+    display: none; }
+  footer {
+    text-align: center;
+    font-size: 10px;
+    margin-top: 80px;
+    grid-area: footer; }
+  .redes {
+    display: inline-block;
+    padding: 10px; } }
+
+@media screen and (max-width: 480px) {
+  /*INDEX*/
+  .contenedor {
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "encabezado" "titulo" "principal1" "footer";
+    justify-content: center;
+    align-items: center; }
+  .navbar {
+    grid-area: encabezado; }
+  h1 {
+    grid-area: titulo;
+    display: none; }
+  .cosme {
+    grid-area: principal1; }
+  body div .cosme .imgCosme {
+    display: inline-flex;
+    justify-content: center;
+    margin: 20px;
+    align-items: center;
+    border: 2px solid  #A52206;
+    border-radius: 20px;
+    width: 350px;
+    height: 250px;
+    padding: 15px; }
+  body div .cosme .imgCosme img {
+    width: 150px;
+    height: 200px; }
+  body div .cosme .imgCosme p span {
+    display: none; }
+  footer {
+    text-align: center;
+    font-size: 10px;
+    margin-top: 80px;
+    grid-area: footer; }
+  .redes {
+    display: inline-block;
+    padding: 10px; } }
 
 /*estilos pestaña*/
 body div header h1 {
@@ -97,13 +172,68 @@ body div .mainPestana {
   font-family: 'Moon Dance', cursive;
   font-family: 'Playfair Display', serif;
   font-family: 'Roboto', sans-serif;
-  font-size: 20px; }
+  font-size: 25px; }
+  body div .mainPestana h2 {
+    font-size: 1em; }
   body div .mainPestana .pestana {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 20px; }
+    padding: 50px;
+    gap: 50px; }
+
+@media screen and (max-width: 700px) {
+  .contenedor {
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "encabezado" "titulo" "principal1" "footer";
+    justify-content: center;
+    align-items: center; }
+  .navbar {
+    grid-area: encabezado; }
+  body div header h1 {
+    grid-area: titulo;
+    font-size: 55px; }
+  .mainPestana {
+    grid-area: principal1; }
+  body div .mainPestana .pestana {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; }
+  footer {
+    text-align: center;
+    font-size: 10px;
+    margin-top: 80px;
+    grid-area: footer; }
+  .redes {
+    display: inline-block;
+    padding: 10px; } }
+
+@media screen and (max-width: 480px) {
+  /*INDEX*/
+  .contenedor {
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "encabezado" "titulo" "principal1" "footer";
+    justify-content: center;
+    align-items: center; }
+  .navbar {
+    grid-area: encabezado; }
+  h1 {
+    grid-area: titulo;
+    display: none; }
+  body div .mainPestana {
+    grid-area: principal1; }
+  body div .mainPestana .pestana {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; }
+  footer {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 80px;
+    grid-area: footer; } }
 
 /*estilos de epilacion*/
 body div main {
@@ -124,21 +254,68 @@ body div ol {
   font-family: 'Roboto', sans-serif;
   text-align: center; }
 
+@media screen and (max-width: 700px) {
+  .contenedor {
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "encabezado" "titulo" "principal1" "footer";
+    justify-content: center;
+    align-items: center; }
+  .navbar {
+    grid-area: encabezado; }
+  body div header h1 {
+    grid-area: titulo;
+    font-size: 55px; }
+  .mainEpilacion {
+    grid-area: principal1; }
+  footer {
+    text-align: center;
+    font-size: 10px;
+    margin-top: 80px;
+    grid-area: footer; }
+  .redes {
+    display: inline-block;
+    padding: 10px; } }
+
+@media screen and (max-width: 480px) {
+  .contenedor {
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "encabezado" "titulo" "principal1" "footer";
+    justify-content: center;
+    align-items: center; }
+  .navbar {
+    grid-area: encabezado; }
+  h1 {
+    grid-area: titulo;
+    display: none; }
+  .mainEpilacion {
+    grid-area: principal1; }
+  footer {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 80px;
+    grid-area: footer; } }
+
 body .contacto form {
-  border: 2px solid black;
+  border: 2px solid #A52206;
   border-radius: 30px;
   padding: 15px;
-  width: 300px; }
+  width: 400px; }
 
 body .contacto {
-  justify-content: center; }
+  display: flex;
+  justify-content: space-around;
+  height: 600px; }
+  body .contacto form {
+    height: 500px; }
+    body .contacto form legend {
+      text-align: center; }
+  body .contacto iframe {
+    height: 500px;
+    width: 400px; }
 
-body .mapa {
-  width: 150px;
-  height: 150px; }
-
-@media screen and (max-width: 500px) {
-  /*INDEX*/
+@media screen and (max-width: 700px) {
   .contenedor {
     height: 80vh;
     display: grid;
@@ -146,65 +323,72 @@ body .mapa {
     justify-content: center; }
   .navbar {
     grid-area: encabecado; }
-  h1 {
-    grid-area: titulo;
-    display: none; }
-  .texto {
-    display: none; }
-  .principal {
-    padding: 1px;
-    text-align: center;
-    background-image: url("../img/material-cosmiatria.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 80vh;
-    font-family: 'Aguafina Script', cursive;
-    font-family: 'Moon Dance', cursive;
-    grid-area: principal1;
-    width: auto;
-    justify-content: center;
-    align-items: center; }
-  footer {
-    grid-area: footer; }
-  /*CEJAS*/
-  .video {
-    display: none; }
-  .cosme {
+  .contacto {
+    grid-area: principal1; }
+  body div .contacto {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    justify-content: center;
+    align-items: center;
+    gap: 40px; }
+  body div .contacto form {
+    height: 300px;
+    width: 500px;
+    font-size: 15px; }
+  body div .contacto iframe {
+    height: 300px;
+    width: 500px; }
   footer {
     text-align: center;
-    font-size: 15px;
+    font-size: 10px;
     margin-top: 80px;
     grid-area: footer; }
   .redes {
     display: inline-block;
     padding: 10px; } }
 
-/*Contacto*/
-.contacto {
-  margin: 50px; }
-  .contacto form fieldset legend {
-    text-align: center; }
-
-@media screen and (max-width: 900px) {
-  h1 {
-    font-size: 35px; }
-  .texto {
-    display: none; }
-  .img {
-    height: 300px; }
-  .cosme {
+@media screen and (max-width: 480px) {
+  .contenedor {
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "encabezado" "titulo" "principal1" "footer";
+    justify-content: center;
+    align-items: center; }
+  .navbar {
+    grid-area: encabecado; }
+  body div header h1 {
+    grid-area: titulo;
+    font-size: 55px; }
+  .contacto {
+    grid-area: principal1; }
+  body div .contacto {
     display: flex;
     flex-direction: column;
-    align-items: center; } }
+    justify-content: center;
+    align-items: center;
+    gap: 40px; }
+  body div .contacto form {
+    height: 400px;
+    width: 280px;
+    font-size: 15px; }
+  body div .contacto iframe {
+    height: 350px;
+    width: 300px; }
+  footer {
+    text-align: center;
+    font-size: 10px;
+    margin-top: 80px;
+    grid-area: footer; }
+  .redes {
+    display: inline-block;
+    padding: 10px; } }
 
+/*estilos para el Titulo de cada pagina*/
 /*estilos del index*/
 body {
   background-image: linear-gradient(to left, #F5B7B1, #FAE5D3); }
   body div header nav div ul li {
-    margin: 15px;
+    margin: 0.5rem;
     text-transform: uppercase;
     font-size: 20px; }
     body div header nav div ul li:hover {
@@ -221,18 +405,29 @@ body {
     text-align: center; }
   body div .principal {
     height: 600px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
     background-image: url("../img/material-cosmiatria.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 50px; }
+    font-size: 35px;
+    gap: 30px; }
     body div .principal h2 {
       font-family: 'Amatic SC', cursive;
       font-family: 'Moon Dance', cursive;
       font-family: 'Playfair Display', serif;
       font-family: 'Roboto', sans-serif;
-      font-size: 35px;
+      font-size: 1em;
+      font-weight: bold; }
+    body div .principal p {
+      font-family: 'Amatic SC', cursive;
+      font-family: 'Moon Dance', cursive;
+      font-family: 'Playfair Display', serif;
+      font-family: 'Roboto', sans-serif;
+      font-size: 1em;
       font-weight: bold; }
   body div footer {
     text-align: center; }
@@ -246,19 +441,52 @@ body {
       font-family: 'Roboto', sans-serif;
       font-size: 15px; }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
+  .contenedor {
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "encabezado" "titulo" "principal1" "footer";
+    justify-content: center;
+    align-items: center; }
+  .navbar {
+    grid-area: encabezado; }
+  body div header h1 {
+    grid-area: titulo;
+    font-size: 55px; }
+  .texto {
+    display: none; }
+  .principal {
+    text-align: center;
+    background-image: url("../img/material-cosmiatria.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    font-family: 'Aguafina Script', cursive;
+    font-family: 'Moon Dance', cursive;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    grid-area: principal1;
+    align-items: center; }
+  footer {
+    grid-area: footer; } }
+
+@media screen and (max-width: 480px) {
   /*INDEX*/
   .contenedor {
     height: 80vh;
     display: grid;
     grid-template-areas: "encabezado" "titulo" "principal1" "footer";
-    justify-content: center; }
+    justify-content: center;
+    align-items: center; }
   .navbar {
-    grid-area: encabecado; }
+    grid-area: encabezado; }
   h1 {
     grid-area: titulo;
     display: none; }
   .texto {
+    display: none; }
+  .textoIndex {
     display: none; }
   .principal {
     padding: 1px;

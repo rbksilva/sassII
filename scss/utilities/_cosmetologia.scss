@@ -2,55 +2,48 @@ body{
     div{
         main{       
             .imgCosme{
-                
+                display: inline-flex;
                 justify-content: center;
                 margin: 20px;
                 align-items: center;
                 border: 2px solid  #A52206;
                 border-radius:20px;
-                width: 450px;
+                width: 550px;
                 height: 350px;
                 padding: 15px;
-                
                 p{
-                    padding: 10px;
-                    
-                   span{
-                    display: block;
-                } 
+                    span{
+                        display: block;
+                    }
                 }
-                
-             
             }
-
         }
     }
 }
-@media screen and (max-width:500px){
-    body{
-        .contenedor{
-            height: 80vh;
-            display: grid;
-            grid-template-areas: "encabezado"
-                              "titulo"
-                              "principal1"
-                              "footer";
-            justify-content: center;
-             .navbar{
-                grid-area: encabecado;
-                h1{
-                    grid-area: titulo;
-                 }
-             }  
-       
+@media screen and (max-width:700px){
+   
+    .contenedor{
+        height: 80vh;
+        display: grid;
+        grid-template-areas:"encabezado"
+                            "titulo"
+                            "principal1"
+                            "footer";
+        justify-content: center;
         }
-
-         
-        .cosme{
-            grid-area: principal1;
-        }
-        .imgCosme{
-            display: block;
+  
+    .navbar{
+        grid-area: encabecado;
+    }  
+    body div header h1{
+        grid-area: titulo;
+        font-size: 55px;
+    }
+    .cosme{
+        grid-area: principal1;
+    }
+    body div .cosme .imgCosme{
+            display: inline-flex;
             justify-content: center;
             margin: 20px;
             align-items: center;
@@ -59,6 +52,84 @@ body{
             width: 350px;
             height: 250px;
             padding: 15px;
-        }
+    }
+    body div .cosme .imgCosme img{
+        width: 150px;
+        height: 200px;
+    }
+    body div .cosme .imgCosme p span{
+        display: none;
+    }
+    footer{
+        text-align: center;
+        font-size: 10px;
+        margin-top: 80px;
+        grid-area: footer;
+    }
+    
+    .redes{
+        display: inline-block;
+        padding: 10px;
     }
 }
+
+@media screen and (max-width:480px) {
+   
+    /*INDEX*/
+    .contenedor{
+        height: 80vh;
+        display: grid;
+        grid-template-areas: "encabezado"
+                              "titulo"
+                              "principal1"
+                              "footer";
+        justify-content: center;
+        align-items: center;
+    }   
+
+    .navbar{
+        grid-area: encabezado;
+    }
+
+    h1{
+        grid-area: titulo;
+        display: none;
+    }
+
+    .cosme{
+        grid-area: principal1;
+    }
+
+    body div .cosme .imgCosme{
+        display: inline-flex;
+        justify-content: center;
+        margin: 20px;
+        align-items: center;
+        border: 2px solid  #A52206;
+        border-radius:20px;
+        width: 350px;
+        height: 250px;
+        padding: 15px;
+    }
+    
+    body div .cosme .imgCosme img{
+    width: 150px;
+    height: 200px;
+    }
+
+    body div .cosme .imgCosme p span{
+        display: none;
+    }
+    footer{
+        text-align: center;
+        font-size: 10px;
+        margin-top: 80px;
+        grid-area: footer;
+    }
+    
+    .redes{
+        display: inline-block;
+        padding: 10px;
+    }
+}
+
