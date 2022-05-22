@@ -62,8 +62,6 @@
 }
 
 @media screen and (max-width:480px){
-   
-   
     .contenedor{
         height: 80vh;
         display: grid;
@@ -91,12 +89,16 @@
         display: none;
     }
 
-       
     footer{
         text-align: center;
-        font-size: 15px;
+        font-size: 10px;
         margin-top: 80px;
         grid-area: footer;
+    }
+    
+    .redes{
+        display: inline-block;
+        padding: 10px;
     }
 }
     

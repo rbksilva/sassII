@@ -44,6 +44,12 @@ body{
     }
     .mainEpilacion{
         grid-area: principal1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .corporal{
+       
     }
        
     footer{
@@ -81,6 +87,10 @@ body{
     }
     .mainEpilacion{
         grid-area: principal1;
+    }
+
+    .epilacion{
+        display: none;
     }
   
     footer{
